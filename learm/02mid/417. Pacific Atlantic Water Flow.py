@@ -14,7 +14,7 @@ class Solution:
                 i < 0 or i >= m or
                 j < 0 or j >= n or
                 (i, j) in visited or
-                heights[i][j] < prev_height
+                heights[i][j] < prev_height # 海側から見て、heightは非減少列でないと駄目
             ):
                 return
             visited.add((i, j))
