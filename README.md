@@ -1,6 +1,10 @@
 # leetcode
 leetcode
 
+- https://leetcode.com/studyplan/top-interview-150/
+- https://leetcode.com/explore/interview/card/top-interview-questions-medium/
+- https://leetcode.com/problem-list/oizxjoit/
+
 
 ```bash
 make new-<project name>
@@ -13,6 +17,8 @@ make new-<project name>
 
 
 # 雑テクニック集
+
+- [./BinSearch.md](./BinSearch.md)
 
 https://leetcode.com/problems/house-robber/description/?envType=problem-list-v2&envId=xo2bgr0r
 ```python
@@ -236,24 +242,3 @@ def deleteDuplicates(head):
             current = current.next
     return head
 ```
-
-
-https://leetcode.com/problems/search-insert-position/description/
-```python
-class Solution:
-    def searchInsert(self, nums: List[int], target: int) -> int:
-        l = 0
-        r = len(nums) # left inclusive
-
-        while l<r:
-            m = (l+r)//2
-            if target == nums[m]:
-                return m
-            elif target < nums[m]:
-                r = m
-            else:
-                l = m+1
-        return l
-```
-
-
